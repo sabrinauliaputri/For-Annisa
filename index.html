@@ -79,11 +79,41 @@ font-size:14px;
 padding:20px;
 color:#888;
 }
+
+/* BUNGA JATUH */
+.flower{
+position:fixed;
+top:-50px;
+font-size:24px;
+animation:fall linear infinite;
+z-index:1;
+opacity:0.8;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-50px) rotate(0deg);
+opacity:0.8;
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:0.2;
+}
+}
 </style>
 </head>
 
 <body>
-
+<!-- bunga jatuh -->
+<div class="flower" style="left:5%; animation-duration:8s;">🌸</div>
+<div class="flower" style="left:15%; animation-duration:10s;">🌷</div>
+<div class="flower" style="left:28%; animation-duration:7s;">🌸</div>
+<div class="flower" style="left:40%; animation-duration:11s;">🌼</div>
+<div class="flower" style="left:55%; animation-duration:9s;">🌸</div>
+<div class="flower" style="left:68%; animation-duration:12s;">🌷</div>
+<div class="flower" style="left:80%; animation-duration:8s;">🌼</div>
+<div class="flower" style="left:92%; animation-duration:10s;">🌸</div>
+  
 <div class="container">
 
 <div class="card">
@@ -95,8 +125,12 @@ padahal hatinya hangat banget.</p>
 udah pernah nerima aku tanpa banyak tanya.<br>
 Aku nggak akan pernah lupa sama hal itu.</p>
 
-<p>Semoga tahun ini sebaik sifat kamu ✨</p>
+<p>Semoga tahun ini sebaik sifat kamu dan sehangat hatimu ✨</p>
 </div>
+
+<audio controls>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
 
 <div class="card">
 <h2>Our Memories 📸</h2>
@@ -122,10 +156,6 @@ Aku nggak akan pernah lupa sama hal itu.</p>
 
 <div class="card">
 <h2>Play this 🎵</h2>
-
-<audio controls>
-<source src="song.mp3" type="audio/mpeg">
-</audio>
 
 </div>
 
